@@ -1,9 +1,10 @@
 #IMPORTS: & INSTALLS - Open command prompt and write "pip install discord==1.7.3" and "pip install discord.py==1.7.3"
 import discord
+import time
 from discord.ext import commands
 
 
-token = "Token" #Your Discord Token
+token = "Your Discord Token" #Your Discord Token
 
 intents = discord.Intents.all()
 client = commands.Bot(command_prefix="!", self_bot=True, intents=intents) #Creating Client & Prefix
@@ -14,7 +15,7 @@ async def on_ready():
     #Write Startup
     print("Simplify Status: Ready For Use.")
     print("-----------------------------")
-    print("Command Prefix Is !")
+    print("Command Prefix: ! | !cmds For Command List.")
     #sussy ahh prefix text
 
 
@@ -25,6 +26,32 @@ async def test(ctx):
     await ctx.send("Test Command Was Used")
     message1 = await ctx.send("Delete Fast")
     await message1.delete()  
+      
+@client.command()
+async def cmds(ctx):
+    commands = client.commands
+    command_list = [command.name for command in commands]
+    commands_str = '\n'.join(command_list)
+    await ctx.send(f"Available Commands:\n{commands_str}")
+    
+@client.command()
+async def spam(ctx, message: str, count: int, delay: float):
+     sentmessages = 0 
+     for i in range(count):
+        sentmessages += 1 
+        time.sleep(delay) 
+        await ctx.send(message)
+        print(f"Message {message} Sent | {sentmessages}/{count}")
+    
+@client.command()
+async def ms(ctx):
+    ping = round(client.latency * 1000)
+    await ctx.send(f"Current MS: {ping}ms")
+    
+@client.command()
+async def pfp(ctx, user: discord.User): 
+   avatar_url=user.avatar_url
+   await ctx.send(avatar_url)
          
 @client.command()
 async def info(ctx, user: discord.User):
