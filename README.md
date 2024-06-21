@@ -5,4 +5,4 @@ I have the pip install form already set on the first line in simplify.py.
 If you enjoyed using my selfbot please start this repo. Also I do not take any responosibility for your actions!
 
 Showcase Of Simplify 1.1:
-https://zor.is-epic.xyz/Iba0i
+https://youtu.be/oz2E6jkWH3o
