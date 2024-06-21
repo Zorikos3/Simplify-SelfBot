@@ -1,0 +1,11 @@
+Available Commands:
+cc ( Channel Creator - Example: !cc 5 Hello ) [ 5 = Channel Amount, Hello = Channel Name ]
+spam ( Spam Message - Example: !spam Hello 10 0 ) [ Hello = Text, 10 = Amount, 0 = Delay ]
+pfp ( Profile Picture - Used: !pfp @user )
+help ( Help MSG (Cmds) - Used: !help )
+ms ( Ping With SelfBot - Used: !ms )
+info ( Info About User - Used: !info @user )
+pingall ( Pings everyone seperatly - Used: !pingall )
+test ( Test Message - Used: !help )
+rizz ( Rizz Messages ( Only 3 ) - Used !rizz )
+cmds ( Command List - Used: !cmds )

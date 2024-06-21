@@ -1,0 +1,6 @@
+Requirements To Run SY:
+( Using PIP )
+
+pip install colorama
+pip install discord==1.7.3
+pip install discord.py==1.7.3
