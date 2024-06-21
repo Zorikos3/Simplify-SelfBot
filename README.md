@@ -1,8 +1,12 @@
 Before running start.bat go to simplify.py and put your token.
-Also for the program to work you need to install py discord self and discord py on some specific version!
-I have the pip install form already set on the first line in simplify.py.
+Also for the program to work you need to install the requirements so click on requirments.txt
 
 If you enjoyed using my selfbot please start this repo. Also I do not take any responosibility for your actions!
 
-Showcase Of Simplify 1.1:
-https://youtu.be/oz2E6jkWH3o
+Showcase:
+
+Updates:
+Huge Update Version 1.2:
++ New UI
++ Lots Of New Commands
++ Way Smoother & Better Than 1.1
